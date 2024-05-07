@@ -3,8 +3,8 @@ set -e
 
 create_pid_dir() {
   mkdir -p /run/apt-cacher-ng
-  # chmod -R 0755 /run/apt-cacher-ng
-  # chown ${APT_CACHER_NG_USER}:${APT_CACHER_NG_USER} /run/apt-cacher-ng
+  chmod -R 0755 /run/apt-cacher-ng
+  chown ${APT_CACHER_NG_USER}:${APT_CACHER_NG_USER} /run/apt-cacher-ng
 }
 
 create_cache_dir() {
